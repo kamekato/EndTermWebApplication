@@ -1,0 +1,13 @@
+version: '3.9'
+
+name: "endterm"
+services:
+  endTerm-db:
+    image: postgres:15.1-alpine
+    container_name: endTerm
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_DB=endTerm
